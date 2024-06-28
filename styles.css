@@ -23,7 +23,77 @@ body{
     height: 100vh;
     overflow: hidden;
     background: var(--color-yellow);
+    font-family: var(--font-fontFam);
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.white-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max(325px, 20vw);
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px;
+}
+
+.white-box .art-image{
+    margin-top: 5%;
+    width: 90%;
+    border-radius: 15px;
+    margin-bottom: 15px
+}
+
+.white-box .yellow-box{
+    width: 90%;
+}
+
+.white-box .yellow-box-content{
+    font-weight: var(--font-boldWeight);
+    font-size: var(--font-sizePar);
+    background: var(--color-yellow);
+    padding: 5px;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.white-box .date{
+    text-align: left;
+    width: 90%;
+    margin-bottom: 0;
+}
+
+.white-box h1{
+    width: 90%;
+    margin-bottom: 0;
+}
+
+.white-box .desc{
+
+    color: var(--color-gray);
+    width: 90%;
+}
+
+.white-box .author{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 5%;
+}
+
+.white-box .author img{
+    float: left;
+    width: 40px;
+}
+
+.white-box .author p{
+    font-weight: var(--font-boldWeight);
+    margin: 10px 50px;
+    
+}
+
