@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {all: unset;  display: revert;}
+
 @font-face {
     font-family: Figtree;
     src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
@@ -38,18 +40,19 @@ body{
     align-items: center;
     border: 1px solid;
     border-radius: 15px;
-    box-shadow: 5px 5px;
+    box-shadow: 8px 8px;
 }
 
 .white-box .art-image{
     margin-top: 5%;
     width: 90%;
     border-radius: 15px;
-    margin-bottom: 15px
+    margin-bottom: 25px;
 }
 
 .white-box .yellow-box{
     width: 90%;
+    margin-bottom: 15px;
 }
 
 .white-box .yellow-box-content{
@@ -60,24 +63,29 @@ body{
     width: 30%;
     text-align: center;
     border-radius: 5px;
-    margin-bottom: 0;
 }
 
 .white-box .date{
     text-align: left;
     width: 90%;
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
 
 .white-box h1{
+    font-weight: var(--font-boldWeight);
+    font-size: 1.5em;
     width: 90%;
-    margin-bottom: 0;
+    margin-bottom: 15px;
+}
+
+.white-box h1:hover{
+    color: var(--color-yellow);
 }
 
 .white-box .desc{
-
     color: var(--color-gray);
     width: 90%;
+    margin-bottom: 15px;
 }
 
 .white-box .author{
@@ -94,6 +102,5 @@ body{
 .white-box .author p{
     font-weight: var(--font-boldWeight);
     margin: 10px 50px;
-    
 }
 
